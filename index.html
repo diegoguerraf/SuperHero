@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assests/img/favicon.ico" />
+    <title>SuperHero</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assests/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <div class="d-flex align-items-center">
+            <img src="assests/img/favicon.ico" alt="" />
+            <a class="navbar-brand mx-2" href="#">SuperHero Chile</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mt-5">
+      <section>
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <form id="searchForm">
+              <div class="form-group">
+                <img src="assests/img/sh2.jpg" alt="" />
+                <h1>Encuentra tu SuperHero</h1>
+                <label for="heroId"
+                  >Ingrese el número del SuperHero a buscar:</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="heroId"
+                  placeholder=""
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="heroData" class="mt-5"></section>
+
+      <section id="chartSection" class="mt-5">
+        <div id="chartContainer" style="height: 300px; width: 100%"></div>
+      </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="assests/js/script.js"></script>
+  </body>
+</html>
